@@ -26,6 +26,14 @@ message = document.querySelector(".message");
 minNum.textContent = min;
 maxNum.textContent = max;
 
+// play again event listener 
+game.addEventListener("mousedown", function(e) {
+    // console.log(1);
+    if (e.target.className === "play-again") {
+        window.location.reload();
+    }
+});
+
 // listen for guess
 guessBtn.addEventListener("click", function() {
     // console.log(guessInput.value);
