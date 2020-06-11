@@ -15,7 +15,7 @@ let min = 1,
     guessesLeft = 3;
 
 // ui elements 
-const game = document.querySelector("game"),
+const game = document.querySelector("#game"),
 minNum = document.querySelector(".min-num"),
 maxNum = document.querySelector(".max-num"),
 guessBtn = document.querySelector("#guess-btn"),
@@ -98,7 +98,7 @@ function gameOver(won, msg) {
 // get winning number
 function getRandomNum(min, max) {
     // console.log(Math.floor(Math.random() * (max-min+1) + min));
-    return Math.floor(Math.random() * (max-min+1) + min)
+    return Math.floor(Math.random()*(max-min+1)+min)
 }
 
 // set message
